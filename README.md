@@ -13,3 +13,6 @@ Disclaimer:
 This project is purely educational and intended for fun. It does not provide accurate representations of space travel, distances, or physics. Enjoy the experience but remember it's 
 just a simulation!
 
+
+
+I've improved the code readability by making some changes and introduced the option to select both a current location and a preferred destination. The modifications have been consolidated into two files. Additionally, I've included a dictionary comprising nested dictionaries, detailing distances between solar system items and other celestial objects.
