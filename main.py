@@ -1,5 +1,6 @@
 import time
-from distance import *
+from distance import distance_from_objects
+
 
 # Funciton will get the new destination to calculate the amount of time
 def travel(current_destination, new_destination):
@@ -26,16 +27,23 @@ def travel(current_destination, new_destination):
 
 
 def main():
-    current_location = input(
-        "Earth | Sun | Moon | Mercury | Venus | Mars | Jupiter | Saturn | Uranus | Neptune| Pluto \nEnter your current location: "
-    ).title()
-    print("Here are your options on where to travel: ")
-    for key, value in distance_from_objects[current_location].items():
-        print(f"Destination: {key} / Distance: {'{:,.0f}'.format(value)} Miles")
+    print(
+        "Welcome to the Speed of Light Simulator. Below are your options for travel destinations:\n"
+    )
+    print("|".join(distance_from_objects.keys()))
 
-    new_destination = input("Which would you like to travel to? ").title()
+    current_location = input("\nPlease enter your current location: ")
+    print("\nHere are the available destinations:\n")
+
+    for key, value in distance_from_objects[current_location].items():
+        formatted_distance = "{:,.0f}".format(value)
+        print(f"Destination: {key} / Distance: {formatted_distance} Miles")
+
+    new_destination = input("\nWhich destination would you like to travel to? ").title()
+    print(" ")
 
     travel(current_location, new_destination)
 
 
-main()
+if __name__ == "__main__":
+    main()
