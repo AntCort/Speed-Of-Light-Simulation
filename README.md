@@ -1,18 +1,22 @@
-Speed of Light Travel Simulation
+# Speed of Light Travel Simulation
 
-This project offers a simulation of space travel from Earth to different destinations at the speed of light. Through user input, you can experience the time it would take to arrive at your chosen destination if you were traveling at the speed of light.
+This project offers a simulation of space travel between various celestial destinations, enabling users to experience the relative travel times at speeds approaching or equal to the speed of light. Through user input, participants can select from a range of spacecraft, each with its own speed, to journey from their current location to a chosen destination within the solar system and beyond.
 
-How It Works
+## How It Works
 
-Run the travel_from_earth.py script, which imports the LightTravel class and contains all necessary logic.
+Run the `main.py` script, which has been enhanced to include a dynamic selection system. This system allows users to choose their starting point, destination, and spacecraft using numeric input, thereby improving usability and interaction.
 
-Upon execution, you'll be presented with a list of destinations, along with their respective distances from Earth.
+Upon execution:
+- You will first select your current location from a provided list of celestial bodies.
+- Next, choose your desired destination to see the distance and simulated travel time at your spacecraft's speed.
+- Finally, select your spacecraft based on the available options, each listed with its speed relative to the speed of light.
 
-Choose your desired destination and observe the simulated travel time, as the program counts down the seconds it would take to travel to your selected location at the speed of light.
-Disclaimer: 
-This project is purely educational and intended for fun. It does not provide accurate representations of space travel, distances, or physics. Enjoy the experience but remember it's 
-just a simulation!
+## Features
 
+- **Dynamic Selection System**: Users can now make selections using numbers, simplifying the process and minimizing input errors.
+- **Expanded Destination Options**: Includes a comprehensive list of celestial bodies and artificial destinations, with distances calculated from the user's chosen starting location.
+- **Multiple Spacecraft Selection**: Offers a variety of spacecraft, each with specified speeds, allowing for diverse travel time simulations.
 
+## Disclaimer
 
-I've improved the code readability by making some changes and introduced the option to select both a current location and a preferred destination. The modifications have been consolidated into two files. Additionally, I've included a dictionary comprising nested dictionaries, detailing distances between solar system items and other celestial objects.
+This project is purely educational and intended for fun. It does not provide accurate representations of space travel, distances, or physics. Enjoy the experience, but remember, it's just a simulation!
